@@ -6,30 +6,37 @@ interface Skill {
   logo: string;
   category: string;
   proficiency: number;
+  gradientFrom: string;
+  gradientTo: string;
 }
 
 const skills: Skill[] = [
   // Frontend
-  { id: "html", name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", category: "Frontend", proficiency: 85 },
-  { id: "css", name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", category: "Frontend", proficiency: 80 },
-  { id: "js", name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", category: "Frontend", proficiency: 75 },
+  { id: "html", name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", category: "Frontend", proficiency: 85, gradientFrom: "from-orange-500", gradientTo: "to-red-500" },
+  { id: "css", name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", category: "Frontend", proficiency: 80, gradientFrom: "from-blue-400", gradientTo: "to-blue-600" },
+  { id: "js", name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", category: "Frontend", proficiency: 75, gradientFrom: "from-yellow-400", gradientTo: "to-yellow-600" },
 
   // Backend
-  { id: "python", name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", category: "Backend", proficiency: 80 },
-  { id: "java", name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", category: "Backend", proficiency: 70 },
+  { id: "python", name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", category: "Backend", proficiency: 80, gradientFrom: "from-blue-500", gradientTo: "to-yellow-500" },
+  { id: "java", name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", category: "Backend", proficiency: 70, gradientFrom: "from-blue-600", gradientTo: "to-orange-500" },
 
   // Databases
-  { id: "sql", name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 78 },
-  { id: "sqlite", name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", category: "Banco de Dados", proficiency: 75 },
-  { id: "mysql", name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 76 },
+  { id: "sql", name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 78, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
+  { id: "sqlite", name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", category: "Banco de Dados", proficiency: 75, gradientFrom: "from-blue-500", gradientTo: "to-cyan-500" },
+  { id: "mysql", name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 76, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
 
-  // Tools & Others
-  { id: "office", name: "Pacote Office", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftoffice/microsoftoffice-original.svg", category: "Ferramentas", proficiency: 85 },
-  { id: "git", name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", category: "Ferramentas", proficiency: 70 },
-  { id: "api", name: "APIs REST", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg", category: "Backend", proficiency: 72 },
+  // APIs & Tools
+  { id: "api", name: "APIs REST", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg", category: "Ferramentas", proficiency: 72, gradientFrom: "from-orange-500", gradientTo: "to-orange-700" },
+  { id: "git", name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", category: "Ferramentas", proficiency: 70, gradientFrom: "from-orange-600", gradientTo: "to-red-600" },
+  { id: "office", name: "Pacote Office", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftoffice/microsoftoffice-original.svg", category: "Ferramentas", proficiency: 85, gradientFrom: "from-blue-500", gradientTo: "to-green-500" },
+
+  // Libraries
+  { id: "pandas", name: "Pandas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg", category: "Bibliotecas", proficiency: 75, gradientFrom: "from-blue-600", gradientTo: "to-white" },
+  { id: "sklearn", name: "Scikit-learn", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg", category: "Bibliotecas", proficiency: 70, gradientFrom: "from-orange-400", gradientTo: "to-orange-600" },
+  { id: "numpy", name: "NumPy", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg", category: "Bibliotecas", proficiency: 72, gradientFrom: "from-blue-600", gradientTo: "to-cyan-400" },
 ];
 
-const categories = ["Frontend", "Backend", "Banco de Dados", "Ferramentas"];
+const categories = ["Frontend", "Backend", "Banco de Dados", "Ferramentas", "Bibliotecas"];
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState("Backend");
@@ -106,7 +113,7 @@ export default function Skills() {
                   </div>
                   <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-500"
+                      className={`h-full bg-gradient-to-r ${skill.gradientFrom} ${skill.gradientTo} transition-all duration-500`}
                       style={{
                         width: hoveredSkill === skill.id ? "100%" : `${skill.proficiency}%`,
                       }}
@@ -124,21 +131,49 @@ export default function Skills() {
         </div>
 
         {/* Additional Skills Section */}
-        <div className="mt-16 p-8 bg-white border border-border rounded-xl fade-in-up" style={{ animationDelay: "0.5s" }}>
-          <h3 className="text-2xl font-bold text-foreground mb-6">Outras Competências</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-semibold text-primary mb-3">Suporte Técnico</h4>
-              <p className="text-muted-foreground">
-                Noções de hardware, sistemas operacionais, redes e troubleshooting.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-primary mb-3">Inteligência Artificial & Dados</h4>
-              <p className="text-muted-foreground">
-                Noções de Python, análise de dados e uso de IAs para produtividade.
-              </p>
-            </div>
+        <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="p-8 bg-white border border-border rounded-xl fade-in-up" style={{ animationDelay: "0.5s" }}>
+            <h3 className="text-2xl font-bold text-foreground mb-6">Suporte Técnico em TI</h3>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Noções de hardware e componentes de computadores</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Sistemas operacionais (Windows, Linux)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Manutenção de computadores e notebooks</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Troubleshooting e resolução de problemas técnicos</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="p-8 bg-white border border-border rounded-xl fade-in-up" style={{ animationDelay: "0.6s" }}>
+            <h3 className="text-2xl font-bold text-foreground mb-6">Inteligência Artificial & Dados</h3>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Noções em Python para análise de dados</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Bibliotecas: Pandas, NumPy, Scikit-learn</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Análise exploratória de dados</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary font-bold">•</span>
+                <span>Uso de IAs para aumentar produtividade</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

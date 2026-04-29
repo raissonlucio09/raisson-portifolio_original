@@ -37,7 +37,7 @@ const coursesItems: EducationItem[] = [
     institution: "SENAC",
     period: "Presencial - Em andamento",
     status: "ongoing",
-    logo: "/manus-storage/senac-logo_a2454f05.png",
+    logo: "/manus-storage/senac-logo-new_a48ca70c.jpg",
   },
   {
     id: "google",
@@ -72,15 +72,6 @@ const coursesItems: EducationItem[] = [
     status: "ongoing",
     description: "Nível Intermediário",
     logo: "/manus-storage/cultura-inglesa-logo-new_f456e813.png",
-  },
-  {
-    id: "spanish",
-    title: "Espanhol",
-    institution: "Autodidata",
-    period: "Online - Em andamento",
-    status: "ongoing",
-    description: "Nível Básico",
-    logo: "🇪🇸",
   },
 ];
 
@@ -241,32 +232,29 @@ export default function Education() {
         {/* Languages Section */}
         <div className="mt-16 p-8 bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/20 rounded-xl fade-in-up" style={{ animationDelay: "0.5s" }}>
           <h3 className="text-2xl font-bold text-foreground mb-6">Idiomas</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div>
               <div className="flex justify-between items-center mb-3">
-                <h4 className="font-semibold text-foreground">Português</h4>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">🇧🇷</span>
+                  <h4 className="font-semibold text-foreground">Português</h4>
+                </div>
                 <span className="text-sm font-bold text-primary">Nativo</span>
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-                <div className="h-full w-full bg-gradient-to-r from-primary to-accent" />
+                <div className="h-full w-full bg-gradient-to-r from-green-600 via-yellow-400 to-blue-600" />
               </div>
             </div>
             <div>
               <div className="flex justify-between items-center mb-3">
-                <h4 className="font-semibold text-foreground">Inglês</h4>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">🇬🇧</span>
+                  <h4 className="font-semibold text-foreground">Inglês</h4>
+                </div>
                 <span className="text-sm font-bold text-primary">Intermediário</span>
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-                <div className="h-full w-2/3 bg-gradient-to-r from-primary to-accent" />
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between items-center mb-3">
-                <h4 className="font-semibold text-foreground">Espanhol</h4>
-                <span className="text-sm font-bold text-primary">Básico</span>
-              </div>
-              <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-                <div className="h-full w-1/3 bg-gradient-to-r from-primary to-accent" />
+                <div className="h-full w-2/3 bg-gradient-to-r from-blue-600 via-red-600 to-white" />
               </div>
             </div>
           </div>

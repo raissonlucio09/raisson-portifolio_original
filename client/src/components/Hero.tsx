@@ -16,7 +16,7 @@ export default function Hero() {
           <div className="fade-in-up">
             <div className="mb-4 inline-block">
               <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full">
-                👋 Bem-vindo ao meu portfólio
+                📍 Morumbi – São Paulo, SP
               </span>
             </div>
 
