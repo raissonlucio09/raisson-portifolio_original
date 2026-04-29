@@ -75,6 +75,32 @@ const coursesItems: EducationItem[] = [
   },
 ];
 
+// SVG Flag Components
+const BrazilFlag = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#009C3B" rx="4"/>
+    <polygon points="12,4 20,12 12,20 4,12" fill="#FFCC00"/>
+    <circle cx="12" cy="12" r="4" fill="#002776"/>
+  </svg>
+);
+
+const USAFlag = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#B22234" rx="4"/>
+    <rect y="4" width="24" height="4" fill="white"/>
+    <rect y="12" width="24" height="4" fill="white"/>
+    <rect y="20" width="24" height="4" fill="white"/>
+    <rect width="10" height="12" fill="#3C3B6B"/>
+  </svg>
+);
+
+const SpainFlag = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#FFC400" rx="4"/>
+    <rect y="6" width="24" height="12" fill="#C60B1E"/>
+  </svg>
+);
+
 export default function Education() {
   return (
     <section id="education" className="py-20 md:py-32 bg-white">
@@ -236,7 +262,7 @@ export default function Education() {
             <div>
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🇧🇷</span>
+                  <BrazilFlag />
                   <h4 className="font-semibold text-foreground">Português</h4>
                 </div>
                 <span className="text-sm font-bold text-primary">Nativo</span>
@@ -248,7 +274,7 @@ export default function Education() {
             <div>
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🇺🇸</span>
+                  <USAFlag />
                   <h4 className="font-semibold text-foreground">Inglês</h4>
                 </div>
                 <span className="text-sm font-bold text-primary">Intermediário</span>
@@ -260,7 +286,7 @@ export default function Education() {
             <div>
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🇪🇸</span>
+                  <SpainFlag />
                   <h4 className="font-semibold text-foreground">Espanhol</h4>
                 </div>
                 <span className="text-sm font-bold text-primary">Básico</span>
