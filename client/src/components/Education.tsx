@@ -7,7 +7,7 @@ interface EducationItem {
   period: string;
   status: "completed" | "ongoing";
   description?: string;
-  icon?: string;
+  logo?: string;
 }
 
 const educationItems: EducationItem[] = [
@@ -17,7 +17,7 @@ const educationItems: EducationItem[] = [
     institution: "E.E. Ministro Costa Manso",
     period: "Concluído em 2025",
     status: "completed",
-    icon: "🎓",
+    logo: "🏫",
   },
   {
     id: "ads",
@@ -26,7 +26,7 @@ const educationItems: EducationItem[] = [
     period: "2026 - Cursando",
     status: "ongoing",
     description: "Formação superior em desenvolvimento de sistemas",
-    icon: "🏫",
+    logo: "/manus-storage/uninove-logo_6f359e8e.png",
   },
 ];
 
@@ -37,7 +37,7 @@ const coursesItems: EducationItem[] = [
     institution: "SENAC",
     period: "Presencial - Em andamento",
     status: "ongoing",
-    icon: "💻",
+    logo: "/manus-storage/senac-logo_a2454f05.png",
   },
   {
     id: "google",
@@ -45,7 +45,7 @@ const coursesItems: EducationItem[] = [
     institution: "CIEE + Google Tech",
     period: "Online - Concluído",
     status: "completed",
-    icon: "🔧",
+    logo: "/manus-storage/google-logo_a01d4ec2.png",
   },
   {
     id: "alura",
@@ -53,7 +53,7 @@ const coursesItems: EducationItem[] = [
     institution: "Alura",
     period: "Online - Concluído",
     status: "completed",
-    icon: "🐍",
+    logo: "/manus-storage/alura-logo_ec4b90aa.png",
   },
   {
     id: "office",
@@ -62,7 +62,7 @@ const coursesItems: EducationItem[] = [
     period: "Online - Em andamento",
     status: "ongoing",
     description: "Word, Excel e PowerPoint - Básico ao Avançado",
-    icon: "📊",
+    logo: "/manus-storage/bradesco-logo_6669f1cf.png",
   },
   {
     id: "english",
@@ -71,7 +71,7 @@ const coursesItems: EducationItem[] = [
     period: "Presencial - Desde 2024",
     status: "ongoing",
     description: "Nível Intermediário",
-    icon: "🌍",
+    logo: "/manus-storage/cultura-inglesa-logo_d46b3c70.png",
   },
 ];
 
@@ -103,7 +103,22 @@ export default function Education() {
               >
                 <div className="timeline-item bg-white border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-start gap-4">
-                    <div className="text-3xl">{item.icon}</div>
+                    {/* Logo */}
+                    <div className="w-16 h-16 flex-shrink-0 bg-secondary rounded-lg flex items-center justify-center overflow-hidden">
+                      {typeof item.logo === "string" && item.logo.startsWith("/") ? (
+                        <img
+                          src={item.logo}
+                          alt={item.institution}
+                          className="w-full h-full object-contain p-2"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.display = "none";
+                          }}
+                        />
+                      ) : (
+                        <span className="text-3xl">{item.logo}</span>
+                      )}
+                    </div>
+
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <h4 className="text-xl font-bold text-foreground">
@@ -157,9 +172,24 @@ export default function Education() {
                 className="stagger-item"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="bg-gradient-to-br from-blue-50 to-white border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300 h-full">
+                <div className="bg-gradient-to-br from-blue-50 to-white border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="text-3xl">{item.icon}</div>
+                    {/* Logo */}
+                    <div className="w-14 h-14 flex-shrink-0 bg-white border border-border rounded-lg flex items-center justify-center overflow-hidden">
+                      {typeof item.logo === "string" && item.logo.startsWith("/") ? (
+                        <img
+                          src={item.logo}
+                          alt={item.institution}
+                          className="w-full h-full object-contain p-1"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).style.display = "none";
+                          }}
+                        />
+                      ) : (
+                        <span className="text-2xl">{item.logo}</span>
+                      )}
+                    </div>
+
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
                         {item.status === "completed" ? (

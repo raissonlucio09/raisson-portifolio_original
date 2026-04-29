@@ -1,0 +1,22 @@
+{
+  "photo": "/manus-storage/raisson-photo_c76befea.png",
+  "logos": {
+    "uninove": "/manus-storage/uninove-logo_6f359e8e.png",
+    "senac": "/manus-storage/senac-logo_a2454f05.png",
+    "alura": "/manus-storage/alura-logo_ec4b90aa.png",
+    "bradesco": "/manus-storage/bradesco-logo_6669f1cf.png",
+    "culturaInglesa": "/manus-storage/cultura-inglesa-logo_d46b3c70.png",
+    "ciee": "/manus-storage/ciee-logo_ccfeb8f9.jpg",
+    "google": "/manus-storage/google-logo_a01d4ec2.png"
+  },
+  "techLogos": {
+    "html": "🏗️",
+    "css": "🎨",
+    "javascript": "⚡",
+    "python": "🐍",
+    "java": "☕",
+    "sql": "🗄️",
+    "sqlite": "💾",
+    "mysql": "🐬"
+  }
+}

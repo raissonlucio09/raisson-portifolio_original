@@ -3,30 +3,30 @@ import { useState } from "react";
 interface Skill {
   id: string;
   name: string;
-  icon: string;
+  logo: string;
   category: string;
   proficiency: number;
 }
 
 const skills: Skill[] = [
   // Frontend
-  { id: "html", name: "HTML5", icon: "🏗️", category: "Frontend", proficiency: 85 },
-  { id: "css", name: "CSS3", icon: "🎨", category: "Frontend", proficiency: 80 },
-  { id: "js", name: "JavaScript", icon: "⚡", category: "Frontend", proficiency: 75 },
+  { id: "html", name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", category: "Frontend", proficiency: 85 },
+  { id: "css", name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", category: "Frontend", proficiency: 80 },
+  { id: "js", name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", category: "Frontend", proficiency: 75 },
 
   // Backend
-  { id: "python", name: "Python", icon: "🐍", category: "Backend", proficiency: 80 },
-  { id: "java", name: "Java", icon: "☕", category: "Backend", proficiency: 70 },
+  { id: "python", name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", category: "Backend", proficiency: 80 },
+  { id: "java", name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", category: "Backend", proficiency: 70 },
 
   // Databases
-  { id: "sql", name: "SQL", icon: "🗄️", category: "Banco de Dados", proficiency: 78 },
-  { id: "sqlite", name: "SQLite", icon: "💾", category: "Banco de Dados", proficiency: 75 },
-  { id: "mysql", name: "MySQL", icon: "🐬", category: "Banco de Dados", proficiency: 76 },
+  { id: "sql", name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 78 },
+  { id: "sqlite", name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", category: "Banco de Dados", proficiency: 75 },
+  { id: "mysql", name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 76 },
 
   // Tools & Others
-  { id: "office", name: "Pacote Office", icon: "📊", category: "Ferramentas", proficiency: 85 },
-  { id: "git", name: "Git", icon: "🔧", category: "Ferramentas", proficiency: 70 },
-  { id: "api", name: "APIs REST", icon: "🌐", category: "Backend", proficiency: 72 },
+  { id: "office", name: "Pacote Office", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftoffice/microsoftoffice-original.svg", category: "Ferramentas", proficiency: 85 },
+  { id: "git", name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", category: "Ferramentas", proficiency: 70 },
+  { id: "api", name: "APIs REST", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg", category: "Backend", proficiency: 72 },
 ];
 
 const categories = ["Frontend", "Backend", "Banco de Dados", "Ferramentas"];
@@ -78,10 +78,17 @@ export default function Skills() {
               onMouseEnter={() => setHoveredSkill(skill.id)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
-              <div className="skill-card glow-effect h-full">
-                {/* Icon */}
-                <div className="text-5xl mb-4 transform transition-transform duration-300 hover:scale-110">
-                  {skill.icon}
+              <div className="skill-card glow-effect h-full flex flex-col">
+                {/* Logo */}
+                <div className="mb-4 h-16 flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+                  <img
+                    src={skill.logo}
+                    alt={skill.name}
+                    className="h-full w-auto object-contain"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = "none";
+                    }}
+                  />
                 </div>
 
                 {/* Name */}
@@ -90,7 +97,7 @@ export default function Skills() {
                 </h3>
 
                 {/* Proficiency Bar */}
-                <div className="mb-4">
+                <div className="mb-4 flex-1">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm text-muted-foreground">Proficiência</span>
                     <span className="text-sm font-semibold text-primary">

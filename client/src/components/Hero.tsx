@@ -73,7 +73,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl transform rotate-3" />
               <div className="absolute inset-2 bg-white rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop"
+                  src="/manus-storage/raisson-photo_c76befea.png"
                   alt="Raisson Lúcio"
                   className="w-full h-full object-cover"
                 />
