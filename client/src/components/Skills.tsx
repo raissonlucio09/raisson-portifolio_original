@@ -21,14 +21,14 @@ const skills: Skill[] = [
   { id: "java", name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", category: "Backend", proficiency: 70, gradientFrom: "from-blue-600", gradientTo: "to-orange-500" },
 
   // Databases
-  { id: "sql", name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 78, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
+  { id: "sql", name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", category: "Banco de Dados", proficiency: 78, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
   { id: "sqlite", name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", category: "Banco de Dados", proficiency: 75, gradientFrom: "from-blue-500", gradientTo: "to-cyan-500" },
   { id: "mysql", name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 76, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
 
   // APIs & Tools
   { id: "api", name: "APIs REST", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg", category: "Ferramentas", proficiency: 72, gradientFrom: "from-orange-500", gradientTo: "to-orange-700" },
   { id: "git", name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", category: "Ferramentas", proficiency: 70, gradientFrom: "from-orange-600", gradientTo: "to-red-600" },
-  { id: "office", name: "Pacote Office", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftoffice/microsoftoffice-original.svg", category: "Ferramentas", proficiency: 85, gradientFrom: "from-blue-500", gradientTo: "to-green-500" },
+  { id: "office", name: "Pacote Office", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg", category: "Ferramentas", proficiency: 85, gradientFrom: "from-blue-500", gradientTo: "to-green-500" },
 
   // Libraries
   { id: "pandas", name: "Pandas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg", category: "Bibliotecas", proficiency: 75, gradientFrom: "from-blue-600", gradientTo: "to-white" },
