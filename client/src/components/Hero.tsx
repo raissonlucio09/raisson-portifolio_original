@@ -51,18 +51,29 @@ export default function Hero() {
 
             {/* Quick Info */}
             <div className="flex flex-wrap gap-6 pt-8 border-t border-border">
-              <div>
-                <p className="text-sm text-muted-foreground">Localização</p>
-                <p className="font-semibold text-foreground">Morumbi, São Paulo</p>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Telefone</p>
-                <p className="font-semibold text-foreground">(11) 95152-1581</p>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Email</p>
-                <p className="font-semibold text-foreground">lucioraisson09@gmail.com</p>
-              </div>
+              <a
+                href="https://maps.google.com/?q=Paraisópolis,+Morumbi,+São+Paulo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors cursor-pointer group"
+              >
+                <p className="text-sm text-muted-foreground group-hover:text-primary">📍 Localização</p>
+                <p className="font-semibold text-foreground group-hover:text-primary">Paraisópolis, Morumbi</p>
+              </a>
+              <a
+                href="tel:+5511951521581"
+                className="hover:text-primary transition-colors cursor-pointer group"
+              >
+                <p className="text-sm text-muted-foreground group-hover:text-primary">📞 Telefone</p>
+                <p className="font-semibold text-foreground group-hover:text-primary">(11) 95152-1581</p>
+              </a>
+              <a
+                href="mailto:lucioraisson09@gmail.com"
+                className="hover:text-primary transition-colors cursor-pointer group"
+              >
+                <p className="text-sm text-muted-foreground group-hover:text-primary">📧 Email</p>
+                <p className="font-semibold text-foreground group-hover:text-primary">lucioraisson09@gmail.com</p>
+              </a>
             </div>
           </div>
 

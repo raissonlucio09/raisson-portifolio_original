@@ -71,7 +71,16 @@ const coursesItems: EducationItem[] = [
     period: "Presencial - Desde 2024",
     status: "ongoing",
     description: "Nível Intermediário",
-    logo: "/manus-storage/cultura-inglesa-logo_d46b3c70.png",
+    logo: "/manus-storage/cultura-inglesa-logo-new_f456e813.png",
+  },
+  {
+    id: "spanish",
+    title: "Espanhol",
+    institution: "Autodidata",
+    period: "Online - Em andamento",
+    status: "ongoing",
+    description: "Nível Básico",
+    logo: "🇪🇸",
   },
 ];
 
@@ -232,7 +241,7 @@ export default function Education() {
         {/* Languages Section */}
         <div className="mt-16 p-8 bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/20 rounded-xl fade-in-up" style={{ animationDelay: "0.5s" }}>
           <h3 className="text-2xl font-bold text-foreground mb-6">Idiomas</h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex justify-between items-center mb-3">
                 <h4 className="font-semibold text-foreground">Português</h4>
@@ -249,6 +258,15 @@ export default function Education() {
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
                 <div className="h-full w-2/3 bg-gradient-to-r from-primary to-accent" />
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between items-center mb-3">
+                <h4 className="font-semibold text-foreground">Espanhol</h4>
+                <span className="text-sm font-bold text-primary">Básico</span>
+              </div>
+              <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+                <div className="h-full w-1/3 bg-gradient-to-r from-primary to-accent" />
               </div>
             </div>
           </div>

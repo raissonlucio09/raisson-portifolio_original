@@ -44,43 +44,50 @@ export default function Contact() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {/* Contact Info Cards */}
           <div className="fade-in-up" style={{ animationDelay: "0.1s" }}>
-            <div className="skill-card text-center">
+            <a
+              href="mailto:lucioraisson09@gmail.com"
+              className="skill-card text-center hover:border-primary transition-all duration-300 block"
+            >
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-bold text-foreground mb-2">Email</h3>
-              <a
-                href="mailto:lucioraisson09@gmail.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
+              <p className="text-muted-foreground hover:text-primary transition-colors">
                 lucioraisson09@gmail.com
-              </a>
-            </div>
+              </p>
+            </a>
           </div>
 
           <div className="fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <div className="skill-card text-center">
+            <a
+              href="tel:+5511951521581"
+              className="skill-card text-center hover:border-primary transition-all duration-300 block"
+            >
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-bold text-foreground mb-2">Telefone</h3>
-              <a
-                href="tel:+5511951521581"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
+              <p className="text-muted-foreground hover:text-primary transition-colors">
                 (11) 95152-1581
-              </a>
-            </div>
+              </p>
+            </a>
           </div>
 
           <div className="fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <div className="skill-card text-center">
+            <a
+              href="https://maps.google.com/?q=Paraisópolis,+Morumbi,+São+Paulo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="skill-card text-center hover:border-primary transition-all duration-300 block"
+            >
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-bold text-foreground mb-2">Localização</h3>
-              <p className="text-muted-foreground">Morumbi, São Paulo - SP</p>
-            </div>
+              <p className="text-muted-foreground hover:text-primary transition-colors">
+                Paraisópolis, Morumbi - SP
+              </p>
+            </a>
           </div>
         </div>
 
@@ -89,7 +96,7 @@ export default function Contact() {
           <h3 className="text-xl font-bold text-foreground mb-6">Conecte-se comigo</h3>
           <div className="flex justify-center gap-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/raisson-lúcio-5b37963aa?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-12 h-12 bg-primary text-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-110"
@@ -98,7 +105,7 @@ export default function Contact() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/raissonlucio09"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-12 h-12 bg-foreground text-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-110"

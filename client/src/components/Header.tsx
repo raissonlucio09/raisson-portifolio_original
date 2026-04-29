@@ -41,10 +41,10 @@ export default function Header() {
         {/* Social Links */}
         <div className="hidden sm:flex items-center gap-4">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/raisson-lúcio-5b37963aa?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-foreground hover:text-primary transition-colors duration-300"
+            className="text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
             title="LinkedIn"
           >
             <svg
@@ -56,10 +56,10 @@ export default function Header() {
             </svg>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/raissonlucio09"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-foreground hover:text-primary transition-colors duration-300"
+            className="text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
             title="GitHub"
           >
             <svg
