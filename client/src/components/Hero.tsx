@@ -1,9 +1,6 @@
-import { ArrowRight, Download, X } from "lucide-react";
-import { useState } from "react";
+import { ArrowRight, Download } from "lucide-react";
 
 export default function Hero() {
-  const [imageExpanded, setImageExpanded] = useState(false);
-
   return (
     <section
       id="home"
@@ -24,7 +21,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Raisson Lúcio da Silva
+              Raisson Lúcio
               <span className="block text-primary">Desenvolvedor Backend</span>
             </h1>
 
@@ -82,63 +79,28 @@ export default function Hero() {
 
           {/* Right: Photo */}
           <div className="relative fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <button
-              onClick={() => setImageExpanded(true)}
-              className="relative w-full aspect-square max-w-sm mx-auto group cursor-pointer"
-            >
+            <div className="relative w-full aspect-square max-w-sm mx-auto">
               {/* Decorative frame */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300" />
-              <div className="absolute inset-2 bg-white rounded-2xl overflow-hidden shadow-2xl group-hover:shadow-3xl transition-shadow duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl transform rotate-3" />
+              <div className="absolute inset-2 bg-white rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/manus-storage/raisson-photo_c76befea.png"
                   alt="Raisson Lúcio"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Badge */}
-              <div className="absolute -bottom-4 -right-4 bg-white border-4 border-primary rounded-full p-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="absolute -bottom-4 -right-4 bg-white border-4 border-primary rounded-full p-4 shadow-lg">
                 <div className="text-center">
                   <p className="text-2xl font-bold text-primary">18</p>
                   <p className="text-xs font-semibold text-foreground">Anos</p>
                 </div>
               </div>
-
-              {/* Hover indicator */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-2xl transition-all duration-300 flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-semibold">
-                  Clique para ampliar
-                </span>
-              </div>
-            </button>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Modal - Imagem Ampliada */}
-      {imageExpanded && (
-        <div
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50"
-          onClick={() => setImageExpanded(false)}
-        >
-          <div
-            className="relative max-w-2xl w-full fade-in-scale"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setImageExpanded(false)}
-              className="absolute -top-12 right-0 text-white hover:bg-white/20 p-2 rounded-lg transition-colors"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <img
-              src="/manus-storage/raisson-photo_c76befea.png"
-              alt="Raisson Lúcio - Ampliado"
-              className="w-full rounded-xl shadow-2xl"
-            />
-          </div>
-        </div>
-      )}
     </section>
   );
 }

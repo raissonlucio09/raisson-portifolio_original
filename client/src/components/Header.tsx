@@ -21,7 +21,7 @@ export default function Header() {
             <span className="text-white font-bold text-lg">RL</span>
           </div>
           <span className="hidden sm:inline font-bold text-foreground">
-            Raisson Lúcio da Silva
+            Raisson Lúcio
           </span>
         </div>
 
