@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "SG Academia",
     description:
       "Sistema completo de gestão de planos e análise de alunos para academias. Dashboard interativo com gráficos em tempo real, gestão de planos, análise de evasão e exportação de dados.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    technologies: ["Python", "JavaScript", "HTML", "CSS", "SQLite"],
     liveUrl: "https://sg-academia-1.onrender.com/",
     githubUrl: "https://github.com/raissonlucio09",
     images: [
