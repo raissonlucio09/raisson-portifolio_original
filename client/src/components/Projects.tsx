@@ -12,6 +12,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: "biblioteca-api",
+    title: "API REST de Biblioteca",
+    description:
+      "Sistema robusto de gerenciamento de acervo com operações CRUD completas. Desenvolvido com foco em arquitetura profissional, persistência de dados e segurança, seguindo os padrões exigidos pelo mercado backend.",
+    technologies: ["Java", "Spring Boot", "JPA", "H2 Database", "Maven"],
+    liveUrl: "https://github.com/raissonlucio09/biblioteca-api#readme",
+    githubUrl: "https://github.com/raissonlucio09/biblioteca-api",
+    images: ["/manus-storage/biblioteca-api-screenshot_default.webp"],
+  },
+  {
     id: "sg-academia",
     title: "SG Academia",
     description:
