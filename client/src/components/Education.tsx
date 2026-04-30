@@ -86,34 +86,34 @@ const coursesItems: EducationItem[] = [
 
 // SVG Flag Components
 const BrazilFlag = () => (
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="24" height="24" fill="#009C3B" rx="4"/>
-    <polygon points="12,4 20,12 12,20 4,12" fill="#FFCC00"/>
-    <circle cx="12" cy="12" r="4" fill="#002776"/>
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#009C3B" rx="3"/>
+    <polygon points="12,5 19,12 12,19 5,12" fill="#FFCC00"/>
+    <circle cx="12" cy="12" r="3.5" fill="#002776"/>
   </svg>
 );
 
 const USAFlag = () => (
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="24" height="24" fill="#B22234" rx="4"/>
-    <rect y="4" width="24" height="4" fill="white"/>
-    <rect y="12" width="24" height="4" fill="white"/>
-    <rect y="20" width="24" height="4" fill="white"/>
-    <rect width="10" height="12" fill="#3C3B6B"/>
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#B22234" rx="3"/>
+    <rect y="3" width="24" height="3" fill="white"/>
+    <rect y="9" width="24" height="3" fill="white"/>
+    <rect y="15" width="24" height="3" fill="white"/>
+    <rect y="21" width="24" height="3" fill="white"/>
+    <rect width="9" height="12" fill="#3C3B6B" rx="1"/>
   </svg>
 );
 
 const SpainFlag = () => (
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="24" height="24" fill="#FFC400" rx="4"/>
-    <rect y="6" width="24" height="12" fill="#C60B1E"/>
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#FFC400" rx="3"/>
+    <rect y="8" width="24" height="8" fill="#C60B1E"/>
   </svg>
 );
 
 export default function Education() {
   const [selectedEducation, setSelectedEducation] = useState<EducationItem | null>(null);
   const [selectedCourse, setSelectedCourse] = useState<EducationItem | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
 
   return (
     <section id="formacao" className="py-20 md:py-32 bg-white">
@@ -141,7 +141,7 @@ export default function Education() {
                 className="fade-in-up w-full text-left"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="card-premium p-6 hover:border-accent/50 group cursor-pointer">
+                <div className="card-premium p-6 hover:border-primary/50 hover:shadow-md group cursor-pointer transition-all duration-300">
                   <div className="flex items-start gap-4">
                     {/* Logo */}
                     <div className="w-16 h-16 flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
@@ -161,20 +161,20 @@ export default function Education() {
 
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
-                        <h4 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
+                        <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                           {item.title}
                         </h4>
                         <div className="flex items-center gap-2">
                           {item.status === "completed" ? (
                             <CheckCircle className="w-5 h-5 text-green-500" />
                           ) : (
-                            <Clock className="w-5 h-5 text-accent" />
+                            <Clock className="w-5 h-5 text-primary" />
                           )}
                           <span
                             className={`text-sm font-semibold ${
                               item.status === "completed"
                                 ? "text-green-600"
-                                : "text-accent"
+                                : "text-primary"
                             }`}
                           >
                             {item.status === "completed" ? "Concluído" : "Em andamento"}
@@ -189,7 +189,7 @@ export default function Education() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-4 text-xs text-accent font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="mt-4 text-xs text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                     Clique para mais detalhes →
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function Education() {
                 className="stagger-item text-left"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="card-premium p-6 hover:border-accent/50 group cursor-pointer h-full">
+                <div className="card-premium p-6 hover:border-primary/50 hover:shadow-md group cursor-pointer h-full transition-all duration-300">
                   <div className="flex items-start gap-4 mb-4">
                     {/* Logo */}
                     <div className="w-14 h-14 flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
@@ -234,13 +234,13 @@ export default function Education() {
                         {item.status === "completed" ? (
                           <CheckCircle className="w-4 h-4 text-green-500" />
                         ) : (
-                          <Clock className="w-4 h-4 text-accent" />
+                          <Clock className="w-4 h-4 text-primary" />
                         )}
                         <span
                           className={`text-xs font-semibold ${
                             item.status === "completed"
                               ? "text-green-600"
-                              : "text-accent"
+                              : "text-primary"
                           }`}
                         >
                           {item.status === "completed" ? "Concluído" : "Em andamento"}
@@ -248,7 +248,7 @@ export default function Education() {
                       </div>
                     </div>
                   </div>
-                  <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                  <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h4>
                   <p className="text-sm text-muted-foreground font-medium mb-1">
@@ -262,7 +262,7 @@ export default function Education() {
                       {item.description}
                     </p>
                   )}
-                  <div className="text-xs text-accent font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="text-xs text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                     Clique para mais detalhes →
                   </div>
                 </div>
@@ -276,58 +276,52 @@ export default function Education() {
           <h3 className="text-2xl font-bold text-foreground mb-8">Idiomas</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Portuguese */}
-            <button
-              onClick={() => setSelectedLanguage(selectedLanguage === "pt" ? null : "pt")}
-              className="text-left card-premium p-6 group cursor-pointer"
-            >
-              <div className="flex justify-between items-center mb-4">
-                <div className="flex items-center gap-3">
+            <div className="card-premium p-6 group hover:shadow-md transition-all duration-300">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="group-hover:scale-110 transition-transform duration-300">
                   <BrazilFlag />
-                  <h4 className="font-semibold text-foreground group-hover:text-accent transition-colors">Português</h4>
                 </div>
-                <span className="text-sm font-bold text-accent">Nativo</span>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Português</h4>
+                  <p className="text-xs text-muted-foreground">Nativo</p>
+                </div>
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-                <div className="h-full w-full bg-gradient-to-r from-green-600 via-yellow-400 to-blue-600" />
+                <div className="h-full w-full bg-gradient-to-r from-green-600 via-yellow-400 to-blue-600 group-hover:shadow-lg transition-shadow duration-300" />
               </div>
-              <p className="text-xs text-muted-foreground mt-3">Clique para detalhes</p>
-            </button>
+            </div>
 
             {/* English */}
-            <button
-              onClick={() => setSelectedLanguage(selectedLanguage === "en" ? null : "en")}
-              className="text-left card-premium p-6 group cursor-pointer"
-            >
-              <div className="flex justify-between items-center mb-4">
-                <div className="flex items-center gap-3">
+            <div className="card-premium p-6 group hover:shadow-md transition-all duration-300">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="group-hover:scale-110 transition-transform duration-300">
                   <USAFlag />
-                  <h4 className="font-semibold text-foreground group-hover:text-accent transition-colors">Inglês</h4>
                 </div>
-                <span className="text-sm font-bold text-accent">Intermediário</span>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Inglês</h4>
+                  <p className="text-xs text-muted-foreground">Intermediário</p>
+                </div>
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-                <div className="h-full w-2/3 bg-gradient-to-r from-red-600 via-white to-blue-600" />
+                <div className="h-full w-2/3 bg-gradient-to-r from-red-600 via-white to-blue-600 group-hover:shadow-lg transition-shadow duration-300" />
               </div>
-              <p className="text-xs text-muted-foreground mt-3">Clique para detalhes</p>
-            </button>
+            </div>
 
             {/* Spanish */}
-            <button
-              onClick={() => setSelectedLanguage(selectedLanguage === "es" ? null : "es")}
-              className="text-left card-premium p-6 group cursor-pointer"
-            >
-              <div className="flex justify-between items-center mb-4">
-                <div className="flex items-center gap-3">
+            <div className="card-premium p-6 group hover:shadow-md transition-all duration-300">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="group-hover:scale-110 transition-transform duration-300">
                   <SpainFlag />
-                  <h4 className="font-semibold text-foreground group-hover:text-accent transition-colors">Espanhol</h4>
                 </div>
-                <span className="text-sm font-bold text-accent">Básico</span>
+                <div className="flex-1">
+                  <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">Espanhol</h4>
+                  <p className="text-xs text-muted-foreground">Básico</p>
+                </div>
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-                <div className="h-full w-1/3 bg-gradient-to-r from-yellow-400 to-red-600" />
+                <div className="h-full w-1/3 bg-gradient-to-r from-yellow-400 to-red-600 group-hover:shadow-lg transition-shadow duration-300" />
               </div>
-              <p className="text-xs text-muted-foreground mt-3">Clique para detalhes</p>
-            </button>
+            </div>
           </div>
         </div>
       </div>
@@ -364,14 +358,14 @@ export default function Education() {
             <h3 className="text-2xl font-bold text-foreground mb-2">
               {selectedEducation.title}
             </h3>
-            <p className="text-accent font-semibold mb-4">{selectedEducation.institution}</p>
+            <p className="text-primary font-semibold mb-4">{selectedEducation.institution}</p>
             <p className="text-muted-foreground mb-4">{selectedEducation.period}</p>
             <p className="text-foreground mb-6 leading-relaxed">
               {selectedEducation.details || selectedEducation.description}
             </p>
             <button
               onClick={() => setSelectedEducation(null)}
-              className="w-full bg-accent text-white font-semibold py-3 rounded-lg hover:bg-accent/90 transition-colors"
+              className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-primary/90 transition-colors"
             >
               Fechar
             </button>
@@ -411,14 +405,14 @@ export default function Education() {
             <h3 className="text-2xl font-bold text-foreground mb-2">
               {selectedCourse.title}
             </h3>
-            <p className="text-accent font-semibold mb-4">{selectedCourse.institution}</p>
+            <p className="text-primary font-semibold mb-4">{selectedCourse.institution}</p>
             <p className="text-muted-foreground mb-4">{selectedCourse.period}</p>
             <p className="text-foreground mb-6 leading-relaxed">
               {selectedCourse.details || selectedCourse.description}
             </p>
             <button
               onClick={() => setSelectedCourse(null)}
-              className="w-full bg-accent text-white font-semibold py-3 rounded-lg hover:bg-accent/90 transition-colors"
+              className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-primary/90 transition-colors"
             >
               Fechar
             </button>
