@@ -16,12 +16,11 @@ const projects: Project[] = [
     title: "SG Academia",
     description:
       "Sistema completo de gestão de planos e análise de alunos para academias. Dashboard interativo com gráficos em tempo real, gestão de planos, análise de evasão e exportação de dados.",
-    technologies: ["JavaScript", "HTML5", "CSS3", "APIs"],
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
     liveUrl: "https://sg-academia-1.onrender.com/",
     githubUrl: "https://github.com/raissonlucio09",
     images: [
-      "/manus-storage/sg-academia-dashboard-full_fab67ed0.webp",
-      "/manus-storage/sg-academia-cadastro-full_ac0ff99e.webp",
+      "/manus-storage/sg-academia-dashboard-large_dba396c9.webp",
     ],
   },
   {
@@ -29,10 +28,10 @@ const projects: Project[] = [
     title: "Criador de Senhas",
     description:
       "Gerador inteligente de senhas 100% interativo com zero dependências JavaScript. Crie senhas seguras em segundos, ajuste cada detalhe e copie o resultado com um clique.",
-    technologies: ["JavaScript Puro", "HTML5", "CSS3"],
+    technologies: ["JavaScript", "HTML5", "CSS3"],
     liveUrl: "https://raissonlucio09.github.io/criador-de-senhas/",
     githubUrl: "https://github.com/raissonlucio09/criador-de-senhas",
-    images: ["/manus-storage/criador-senhas-completo_4f838303.webp"],
+    images: ["/manus-storage/criador-senhas-large_3a57159f.webp"],
   },
 ];
 
