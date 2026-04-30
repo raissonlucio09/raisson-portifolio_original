@@ -20,7 +20,7 @@ const projects: Project[] = [
     liveUrl: "https://sg-academia-1.onrender.com/",
     githubUrl: "https://github.com/raissonlucio09",
     images: [
-      "/manus-storage/sg-academia-dashboard-large_dba396c9.webp",
+      "/manus-storage/sg-academia-dashboard-final_22b33ccf.webp",
     ],
   },
   {
