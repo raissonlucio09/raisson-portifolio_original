@@ -25,7 +25,7 @@ const skills: Skill[] = [
   { id: "sql", name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", category: "Banco de Dados", proficiency: 78, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
   { id: "sqlite", name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg", category: "Banco de Dados", proficiency: 75, gradientFrom: "from-blue-500", gradientTo: "to-cyan-500" },
   { id: "mysql", name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg", category: "Banco de Dados", proficiency: 76, gradientFrom: "from-blue-600", gradientTo: "to-orange-400" },
-  { id: "h2", name: "H2 Database", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/h2/h2-original.svg", category: "Banco de Dados", proficiency: 70, gradientFrom: "from-blue-700", gradientTo: "to-cyan-600" },
+  { id: "h2", name: "H2 Database", logo: "https://www.h2database.com/html/images/h2-logo-2.png", category: "Banco de Dados", proficiency: 70, gradientFrom: "from-blue-700", gradientTo: "to-cyan-600" },
 
   // APIs & Tools
   { id: "api", name: "APIs REST", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg", category: "Ferramentas", proficiency: 72, gradientFrom: "from-orange-500", gradientTo: "to-orange-700" },
