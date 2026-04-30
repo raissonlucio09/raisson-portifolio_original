@@ -19,7 +19,11 @@ const projects: Project[] = [
     technologies: ["Java", "Spring Boot", "JPA", "H2 Database", "Maven"],
     liveUrl: "https://github.com/raissonlucio09/biblioteca-api#readme",
     githubUrl: "https://github.com/raissonlucio09/biblioteca-api",
-    images: ["/manus-storage/biblioteca-api-screenshot_default.webp"],
+    images: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663613623985/gnma4ZNgVoH8EXjbdzeYGg/biblioteca-api-intellij-SXCRBtrAGNVhpEGeyfsd3a.webp",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663613623985/gnma4ZNgVoH8EXjbdzeYGg/biblioteca-api-powershell-Xfqu9Mj5gkFSSDa9fSwsCJ.webp",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663613623985/gnma4ZNgVoH8EXjbdzeYGg/biblioteca-api-navegador-LemCjb8Jg8UgW5XGDaa5cn.webp"
+    ],
   },
   {
     id: "sg-academia",
@@ -28,7 +32,7 @@ const projects: Project[] = [
       "Sistema completo de gestão de planos e análise de alunos para academias. Dashboard interativo com gráficos em tempo real, gestão de planos, análise de evasão e exportação de dados.",
     technologies: ["Python", "JavaScript", "HTML", "CSS", "SQLite"],
     liveUrl: "https://sg-academia-1.onrender.com/",
-    githubUrl: "https://github.com/raissonlucio09",
+    githubUrl: "https://github.com/raissonlucio09/sg-academia",
     images: [
       "/manus-storage/sg-academia-dashboard-final_22b33ccf.webp",
     ],
