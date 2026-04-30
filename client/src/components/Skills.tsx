@@ -34,7 +34,7 @@ const skills: Skill[] = [
   { id: "numpy", name: "NumPy", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg", category: "Bibliotecas", proficiency: 80, gradientFrom: "from-blue-600", gradientTo: "to-cyan-400", description: "Computação numérica e operações com arrays" },
 
   // Tools
-  { id: "office", name: "Pacote Office", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg", category: "Ferramentas", proficiency: 85, gradientFrom: "from-blue-500", gradientTo: "to-green-500", description: "Word, Excel avançado e PowerPoint profissional" },
+  { id: "office", name: "Pacote Office", logo: "/manus-storage/microsoft-office-logo_e8c2f4a1.png", category: "Ferramentas", proficiency: 85, gradientFrom: "from-blue-500", gradientTo: "to-green-500", description: "Word, Excel avançado e PowerPoint profissional" },
   { id: "git", name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", category: "Ferramentas", proficiency: 75, gradientFrom: "from-orange-600", gradientTo: "to-red-600", description: "Controle de versão e colaboração em projetos" },
 ];
 
