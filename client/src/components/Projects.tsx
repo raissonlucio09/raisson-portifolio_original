@@ -18,9 +18,10 @@ const projects: Project[] = [
       "Sistema completo de gestão de planos e análise de alunos para academias. Dashboard interativo com gráficos em tempo real, gestão de planos, análise de evasão e exportação de dados.",
     technologies: ["JavaScript", "HTML5", "CSS3", "APIs"],
     liveUrl: "https://sg-academia-1.onrender.com/",
+    githubUrl: "https://github.com/raissonlucio09",
     images: [
-      "/manus-storage/sg-academia-dashboard_681af435.webp",
-      "/manus-storage/sg-academia-cadastro_95230147.webp",
+      "/manus-storage/sg-academia-dashboard-full_fab67ed0.webp",
+      "/manus-storage/sg-academia-cadastro-full_ac0ff99e.webp",
     ],
   },
   {
@@ -31,10 +32,7 @@ const projects: Project[] = [
     technologies: ["JavaScript Puro", "HTML5", "CSS3"],
     liveUrl: "https://raissonlucio09.github.io/criador-de-senhas/",
     githubUrl: "https://github.com/raissonlucio09/criador-de-senhas",
-    images: [
-      "/manus-storage/criador-senhas-1_6ec1b9a0.webp",
-      "/manus-storage/criador-senhas-2_f9484f22.webp",
-    ],
+    images: ["/manus-storage/criador-senhas-completo_4f838303.webp"],
   },
 ];
 
@@ -85,7 +83,13 @@ export default function Projects() {
                 </div>
 
                 {/* Images */}
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div
+                  className={
+                    project.images.length === 1
+                      ? "mb-8"
+                      : "grid md:grid-cols-2 gap-6 mb-8"
+                  }
+                >
                   {project.images.map((image, idx) => (
                     <div
                       key={idx}
