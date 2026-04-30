@@ -21,7 +21,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Raisson Lúcio
+              Raisson Lúcio da Silva
               <span className="block text-primary">Desenvolvedor Backend</span>
             </h1>
 
